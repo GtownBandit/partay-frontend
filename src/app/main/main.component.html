@@ -1,0 +1,71 @@
+<div>
+  <app-title class="mb-10"></app-title>
+</div>
+
+<div class="text-center text-white">
+  <app-next-date></app-next-date>
+</div>
+
+<div class="mt-10 flex justify-center">
+  <div class=" grid grid-cols-4 max-md:grid-cols-2 gap-5">
+    <button class="button-primary" (click)="scrollTo('tickets')">
+      TICKETS
+    </button>
+    <button class="button-primary">
+      PHOTOS
+    </button>
+    <button class="button-primary">
+      RULES
+    </button>
+    <button class="button-primary">
+      FEEDBACK
+    </button>
+  </div>
+</div>
+
+<div class="mt-10 flex justify-center ">
+  <div class="lg:w-1/2 w-full lg:mx-0 mx-5 text-center">
+    <app-card>
+      <div class="mb-2 text-3xl">
+        Are you …ready for it?
+      </div>
+      <div class="text-xl">
+        Wildest dreams come true sometimes!
+      </div>
+      <div class="mb-2 text-xl">
+        Join us for an enchanting night. Let’s be happy, free, confused and lonely
+        together and dance like we knew our lives would never be the same. May we remember the sparks flying
+        forevermore..
+      </div>
+      <div class="text-xl">
+        Make the friendship bracelets, dress up in your favorite era but most importantly let’s create a space to be
+        ourselves, sing from the top of our lungs, cry tears of joy and sadness, make friends and dance like nobody’s
+        watching.
+      </div>
+    </app-card>
+  </div>
+</div>
+
+<div class="mt-10 flex justify-center text-center">
+  <div class="lg:w-1/2 w-full lg:mx-0 mx-5">
+    <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
+      <app-card cla>
+        Entrance: 18:00
+      </app-card>
+      <app-card>
+        End: 04:00
+      </app-card>
+    </div>
+  </div>
+</div>
+
+<div class="mt-10 flex justify-center" id="tickets">
+  <div class="lg:w-1/2 w-full lg:mx-0 mx-5 text-center">
+    <app-card>
+      <iframe width="100%" height="450px"
+              src="https://checkout.bringticket.com/checkout?eventId=019464d3-aac6-735d-8068-62746651a796&elemId=bringticket-embed-tf5enj"
+              allow="payment"
+              style="min-width: 300px; min-height: 370px; border-radius: 20px;"></iframe>
+    </app-card>
+  </div>
+</div>
