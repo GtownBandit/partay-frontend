@@ -10,6 +10,9 @@ import {DatePipe} from '@angular/common';
   styleUrl: './next-date.component.css'
 })
 export class NextDateComponent {
+  date: Date = new Date();
 
-  protected readonly Date = Date;
+  constructor() {
+    this.date = new Date(new Date().setDate(new Date().getDate() + 14));
+  }
 }
